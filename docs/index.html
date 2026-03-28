@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily News — March 28, 2026</title>
+<title>Daily News — 2026年03月28日</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --bg: #0f172a; --surface: #1e293b; --border: #334155;
     --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8;
+    --green: #34d399;
     --font: 'Segoe UI', 'Hiragino Sans', sans-serif;
   }
   body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; }
@@ -33,145 +34,78 @@
   }
   .card:hover { border-color: var(--accent); transform: translateY(-1px); }
   .source { font-size: .72rem; color: var(--accent); opacity: .7; text-transform: uppercase; letter-spacing: .05em; margin-bottom: .3rem; }
-  .card h3 { font-size: .97rem; margin-bottom: .4rem; font-weight: 600; }
+  .card h3 { font-size: .97rem; margin-bottom: .6rem; font-weight: 600; }
   .card h3 a { color: var(--text); text-decoration: none; }
   .card h3 a:hover { color: var(--accent); }
-  .card p { color: var(--muted); font-size: .87rem; }
+  .badge {
+    display: inline-block; font-size: .7rem; padding: .15rem .5rem;
+    background: rgba(52,211,153,.15); color: var(--green);
+    border: 1px solid rgba(52,211,153,.3); border-radius: 4px; margin-bottom: .5rem;
+  }
+  .ai-summary { font-size: .92rem; color: var(--text); margin-bottom: .8rem; line-height: 1.75; }
+  details { margin-top: .4rem; }
+  details summary {
+    font-size: .78rem; color: var(--muted); cursor: pointer;
+    list-style: none; display: flex; align-items: center; gap: .3rem;
+  }
+  details summary::before { content: "▶"; font-size: .65rem; transition: transform .2s; }
+  details[open] summary::before { transform: rotate(90deg); }
+  .original { font-size: .82rem; color: var(--muted); margin-top: .5rem; padding-top: .5rem; border-top: 1px solid var(--border); }
   footer { text-align: center; padding: 2rem; color: #475569; font-size: .8rem; border-top: 1px solid var(--border); }
 </style>
 </head>
 <body>
 <header>
   <h1>📰 Daily News</h1>
-  <p>March 28, 2026 — Auto-collected via RSS</p>
+  <p>2026年03月28日 — Gemini AI が初学者向けに解説</p>
 </header>
 <main>
-<section class="category"><h2>Technology & AI</h2>
+<section class="category"><h2>テクノロジー・IT</h2>
   <article class="card">
-    <div class="source">TechCrunch</div>
-    <h3><a href="https://techcrunch.com/2026/03/28/what-will-power-the-grid-in-2035-the-race-is-wide-open/" target="_blank" rel="noopener">What will power the grid in 2035? The race is wide open</a></h3>
-    <p>Fusion, fission, and even natural gas are appeared tied in the race to deliver new power to the grid in the early 2030s.</p>
+    <div class="source">ITmedia AI＋ 最新記事一覧</div>
+    <h3><a href="https://www.itmedia.co.jp/enterprise/articles/2603/28/news017.html" target="_blank" rel="noopener">Notion、日本と韓国でデータ保管可能に　26年5月から提供開始</a></h3>
+    <div class="badge">🤖 AI解説</div>
+    <p class="ai-summary">Notion Labsは、新たに日本と韓国をデータ保管地域に指定すると発表した。AWSを活用し国内保存を選択可能にすることで、企業の内部統制や法規制への対応を支援する。</p>
+    <details>
+      <summary>元の記事概要を見る</summary>
+      <p class="original">Notion Labsは、新たに日本と韓国をデータ保管地域に指定すると発表した。AWSを活用し国内保存を選択可能にすることで、企業の内部統制や法規制への対応を支援する。</p>
+    </details>
   </article>
   <article class="card">
-    <div class="source">TechCrunch</div>
-    <h3><a href="https://techcrunch.com/2026/03/28/lets-take-a-look-at-the-retro-tech-making-a-comeback/" target="_blank" rel="noopener">Let’s take a look at the retro tech making a comeback</a></h3>
-    <p>Boomboxes, instant cameras, and even landlines are making a comeback. Here are the coolest retro-inspired devices available.</p>
+    <div class="source">ITmedia AI＋ 最新記事一覧</div>
+    <h3><a href="https://www.itmedia.co.jp/enterprise/articles/2603/28/news016.html" target="_blank" rel="noopener">ドラクエで「対話型AIバディ」誕生　ゲーム業界の機能不全をどう突破するか</a></h3>
+    <div class="badge">🤖 AI解説</div>
+    <p class="ai-summary">市場拡大の裏で収益悪化に喘ぐゲーム業界。この構造的課題を打破すべく、スクウェア・エニックスとGoogle Cloudが手を組んだ。両社が見すえる、人気作『ドラクエ』を舞台に、生成AIが「敵」から「友」へと変容する未来とは。</p>
+    <details>
+      <summary>元の記事概要を見る</summary>
+      <p class="original">市場拡大の裏で収益悪化に喘ぐゲーム業界。この構造的課題を打破すべく、スクウェア・エニックスとGoogle Cloudが手を組んだ。両社が見すえる、人気作『ドラクエ』を舞台に、生成AIが「敵」から「友」へと変容する未来とは。</p>
+    </details>
   </article>
   <article class="card">
-    <div class="source">TechCrunch</div>
-    <h3><a href="https://techcrunch.com/2026/03/28/from-moon-hotels-to-cattle-herding-8-startups-investors-chased-at-yc-demo-day/" target="_blank" rel="noopener">From Moon hotels to cattle herding: 8 startups investors chased at YC Demo Day</a></h3>
-    <p>We polled nearly a dozen VCs to find out which W26 startups are the sought after in the batch.</p>
+    <div class="source">ITmedia AI＋ 最新記事一覧</div>
+    <h3><a href="https://www.itmedia.co.jp/aiplus/articles/2603/27/news115.html" target="_blank" rel="noopener">“AI不使用”の作品に「AI生成」と誤表記――電子書籍配信「クロスフォリオ出版」が謝罪</a></h3>
+    <div class="badge">🤖 AI解説</div>
+    <p class="ai-summary">BookLiveは、クリエイター向け電子書籍配信サービス「クロスフォリオ出版」で配信した一部の作品で、制作に生成AIを利用していないにもかかわらず、AIを使用している旨の誤表記があったと謝罪した。</p>
+    <details>
+      <summary>元の記事概要を見る</summary>
+      <p class="original">BookLiveは、クリエイター向け電子書籍配信サービス「クロスフォリオ出版」で配信した一部の作品で、制作に生成AIを利用していないにもかかわらず、AIを使用している旨の誤表記があったと謝罪した。</p>
+    </details>
   </article>
   <article class="card">
-    <div class="source">TechCrunch</div>
-    <h3><a href="https://techcrunch.com/2026/03/27/whoop-has-lebron-now-it-wants-your-mom/" target="_blank" rel="noopener">Whoop has LeBron – now it wants your mom</a></h3>
-    <p>Whoop founder Will Ahmed has spent 14 years building a health wearable beloved by elite athletes, and is now racing Oura — and the FDA, and the limits of consumer medicine — to turn it into something that could one day save your life.</p>
-  </article>
-  <article class="card">
-    <div class="source">The Verge</div>
-    <h3><a href="https://www.theverge.com/ai-artificial-intelligence/900400/tiktok-ai-ads-labels-samsung-disclosure" target="_blank" rel="noopener">TikTok&#8217;s policy for AI ads isn&#8217;t working</a></h3>
-    <p>I've been struggling to tell whether the ads appearing in my TikTok feeds have been made with generative AI tools. As someone who spends a great deal of time scrutinizing images and videos for the usual "tells" that something was synthetically generated, some of the promotions I've seen have definit</p>
-  </article>
-  <article class="card">
-    <div class="source">The Verge</div>
-    <h3><a href="https://www.theverge.com/policy/903006/meta-new-mexico-los-angeles-child-safety-trial-impact" target="_blank" rel="noopener">Meta’s legal defeat could be a victory for children, or a loss for everyone</a></h3>
-    <p>Is social media not just bad, but illegally bad? Should tech companies pay for making it that way? According to two US juries - and no shortage of outside commentary - the answer to both questions is "yes." Earlier this week, two juries - one in New Mexico, one in Los Angeles - held Meta [&#8230;]</p>
-  </article>
-  <article class="card">
-    <div class="source">The Verge</div>
-    <h3><a href="https://www.theverge.com/games/902384/under-the-island-review" target="_blank" rel="noopener">A classic Zelda-style adventure, but a lot more cozy</a></h3>
-    <p>The Legend of Zelda games are grand adventures, but they can also be very comforting, with quaint villages to explore and warm landscapes to take in. Under The Island takes that idea a step further. It still offers the sense of exploration and puzzle-solving that makes Zelda games so satisfying, but</p>
-  </article>
-  <article class="card">
-    <div class="source">The Verge</div>
-    <h3><a href="https://www.theverge.com/gadgets/902473/most-popular-reader-picks-amazon-big-spring-sale-2026-deals" target="_blank" rel="noopener">Here’s what Verge readers are buying during Amazon’s Big Spring Sale</a></h3>
-    <p>We have a pretty good understanding of which deals Verge readers will gravitate toward. After all, what products and services resonate with our audience — and the quality of the deal itself — are what help us determine what to cover on any given day. And yet, we never know for sure how people will [</p>
-  </article>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/czx9852nkexo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">PS5 price hiked by £90 due to global 'pressures'</a></h3>
-    <p>The changes will see the recommended retail price of the PS5 rise from £479.99 to £569.99 in the UK.</p>
-  </article>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/c70dqk2vjv8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Lloyds bank reveals IT glitch affected almost half a million customers</a></h3>
-    <p>In a letter to the Treasury Select Committee, Lloyds apologised and said some compensation had been paid.</p>
-  </article>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/cj37eeyz0epo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Just Eat and Autotrader among firms investigated in fake reviews probe</a></h3>
-    <p>The UK's competition watchdog says it is looking at five firms in its investigation into misleading online reviews.</p>
-  </article>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/cvg4p02lvd0o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Judge rejects Pentagon's attempt to 'cripple' Anthropic</a></h3>
-    <p>A federal judge told the government it could not immediately enforce a ban on Anthropic’s tools.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Technology</div>
-    <h3><a href="https://www.nytimes.com/2026/03/26/technology/anthropic-pentagon-risk-injunction.html" target="_blank" rel="noopener">Judge Stays Pentagon’s Labeling of Anthropic as ‘Supply Chain Risk’</a></h3>
-    <p>The decision is an early victory for the artificial intelligence company in a rancorous legal battle with the Department of Defense.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Technology</div>
-    <h3><a href="https://www.nytimes.com/2026/03/27/business/helium-chips-iran-war.html" target="_blank" rel="noopener">An Invisible Bottleneck: A Helium Shortage Threatens the Chip Industry</a></h3>
-    <p>With a third of the global supply offline because of the war in Iran, gas companies are scrambling to assure critical A.I. chip makers there will be no disruptions.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Technology</div>
-    <h3><a href="https://www.nytimes.com/2026/03/26/technology/binance-iran-us-sanctions.html" target="_blank" rel="noopener">The Clues Binance Missed That Led to Billions in Crypto Flowing to Iran</a></h3>
-    <p>The world’s largest crypto exchange is under fire after investigators found accounts moving $1.7 billion to entities linked to Iran. Clues about those accounts were in plain sight for over a year.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Technology</div>
-    <h3><a href="https://www.nytimes.com/2026/03/27/podcasts/hardfork-ezra-jack-clark.html" target="_blank" rel="noopener">The Ezra Klein Show: How Fast Will A.I. Agents Rip Through the Economy?</a></h3>
-    <p>The Anthropic co-founder Jack Clark tells Ezra Klein what he sees coming in the new era of A.I. agents.</p>
+    <div class="source">ITmedia AI＋ 最新記事一覧</div>
+    <h3><a href="https://www.itmedia.co.jp/news/articles/2603/27/news112.html" target="_blank" rel="noopener">サイバー子会社・AI Shift、名前が似た企業との混同に注意喚起　「SHIFT」や「SHIFT AI」との誤認が発生か</a></h3>
+    <div class="badge">🤖 AI解説</div>
+    <p class="ai-summary">サイバーエージェントの子会社でAI事業を手掛けるAI Shiftが、自社への問い合わせや評価において、似た名前の企業・サービスとの混同が見られるとして注意喚起した。生成AI関連のスクール事業を手掛けるSHIFT AI（東京都渋谷区）や、ITコンサルティング事業を手掛けるSHIFTとの誤認が起きているとみられる。</p>
+    <details>
+      <summary>元の記事概要を見る</summary>
+      <p class="original">サイバーエージェントの子会社でAI事業を手掛けるAI Shiftが、自社への問い合わせや評価において、似た名前の企業・サービスとの混同が見られるとして注意喚起した。生成AI関連のスクール事業を手掛けるSHIFT AI（東京都渋谷区）や、ITコンサルティング事業を手掛けるSHIFTとの誤認が起きているとみられる。</p>
+    </details>
   </article>
 </section>
-<section class="category"><h2>Business & Economy</h2>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/cvgk8zk9epgo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">How Trump and the oil markets move in sync: a tango in five charts</a></h3>
-    <p>Oil markets have been sensitive to Donald Trump's comments on the war. But are traders growing less responsive?</p>
-  </article>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/cdxdnd87v78o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Asda boss rejects profiteering claims as petrol price tops 150p</a></h3>
-    <p>Motorists are facing higher fuel prices ahead of Easter break due to the conflict in the Middle East, the RAC says.</p>
-  </article>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/cj37eeyz0epo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Just Eat and Autotrader among firms investigated in fake reviews probe</a></h3>
-    <p>The UK's competition watchdog says it is looking at five firms in its investigation into misleading online reviews.</p>
-  </article>
-  <article class="card">
-    <div class="source">BBC News</div>
-    <h3><a href="https://www.bbc.com/news/articles/c8957kqqdg4o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">'Ripple of fear' over Iran war hits consumer confidence</a></h3>
-    <p>A key survey indicates growing doubt among shoppers over prospects for the UK economy in the next year.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Business</div>
-    <h3><a href="https://www.nytimes.com/2026/03/28/business/dealbook/chef-restaurant-residencies.html" target="_blank" rel="noopener">The Biggest Names in Fine Dining Now Have Rock-Star Residencies</a></h3>
-    <p>From Las Vegas to the Côte d’Azur, high-profile chefs are taking their cuisine on the road.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Business</div>
-    <h3><a href="https://www.nytimes.com/2026/03/28/business/iran-propaganda-war-ai.html" target="_blank" rel="noopener">In an Asymmetrical War, Iran Seeks an Edge With Its Information War</a></h3>
-    <p>Propaganda and disinformation have flooded the internet in a sophisticated effort to undermine support for U.S. and Israeli attacks.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Business</div>
-    <h3><a href="https://www.nytimes.com/2026/03/28/business/oil-shocks-1970s-iran-war.html" target="_blank" rel="noopener">The Oil Shocks of the ’70s Changed the World. Will the Iran War Do the Same?</a></h3>
-    <p>Gas lines and quadrupling oil prices freaked out American consumers. But the oil crises also transformed global finance.</p>
-  </article>
-  <article class="card">
-    <div class="source">NYT > Business</div>
-    <h3><a href="https://www.nytimes.com/2026/03/28/business/silicon-valley-tiny-team-two-slice.html" target="_blank" rel="noopener">Smaller Is Better in Silicon Valley’s ‘Tiny Team’ Moment</a></h3>
-    <p>As artificial intelligence takes on more and more tasks, tech executives are embracing teams as small as two: one person plus A.I.</p>
-  </article>
+<section class="category"><h2>ビジネス・経済</h2>
 </section>
 
 </main>
-<footer>Updated automatically via GitHub Actions &nbsp;·&nbsp; 2026-03-28 23:07 JST</footer>
+<footer>Updated automatically via GitHub Actions &nbsp;·&nbsp; 2026-03-28 23:30 JST</footer>
 </body>
 </html>
