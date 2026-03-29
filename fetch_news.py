@@ -129,10 +129,14 @@ def summarize_with_gemini(title: str, body: str) -> str:
             timeout=20,
         )
         data = resp.json()
+        if "candidates" not in data:
+            error_msg = data.get("error", {}).get("message", str(data))
+            print(f"  [WARN] Gemini API 異常レスポンス: {error_msg}")
+            return f"（Gemini APIエラー: {error_msg}）"
         return data["candidates"][0]["content"]["parts"][0]["text"].strip()
     except Exception as e:
         print(f"  [WARN] Gemini API エラー: {e}")
-        return body[:200] if body else "（要約に失敗しました）"
+        return f"（要約失敗: {e}）"
 
 
 # ─── HTML 生成 ────────────────────────────────────────────────────────────────
