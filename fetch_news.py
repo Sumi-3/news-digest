@@ -105,7 +105,7 @@ def summarize_with_gemini(title: str, body: str) -> str:
 
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-2.0-flash:generateContent?key={api_key}"
+        f"gemini-flash-latest:generateContent?key={api_key}"
     )
 
     content = body if body else title
