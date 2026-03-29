@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily News — 2026年03月29日</title>
+<title>Daily News — 2026年03月28日</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --bg: #0f172a; --surface: #1e293b; --border: #334155;
-    --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8;
-    --green: #34d399;
+    --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8; --green: #34d399;
     --font: 'Segoe UI', 'Hiragino Sans', sans-serif;
   }
   body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; }
@@ -18,35 +17,30 @@
     padding: 2.5rem 1rem 2rem; text-align: center;
     border-bottom: 1px solid var(--border);
   }
-  header h1 { font-size: 2rem; color: var(--accent); letter-spacing: -0.02em; }
+  header h1 { font-size: 2rem; color: var(--accent); }
   header p  { color: var(--muted); margin-top: .4rem; font-size: .95rem; }
+  .count { color: var(--green); font-size: .85rem; margin-top: .3rem; }
   main { max-width: 860px; margin: 2.5rem auto; padding: 0 1rem 4rem; }
-  .category { margin-bottom: 3rem; }
-  .category h2 {
-    color: var(--accent); border-left: 3px solid var(--accent);
-    padding-left: .75rem; margin-bottom: 1.2rem;
-    letter-spacing: .06em; text-transform: uppercase; font-size: .8rem;
-  }
   .card {
     background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; padding: 1.1rem 1.4rem; margin-bottom: .8rem;
+    border-radius: 10px; padding: 1.2rem 1.5rem; margin-bottom: 1rem;
     transition: border-color .15s, transform .15s;
   }
   .card:hover { border-color: var(--accent); transform: translateY(-1px); }
-  .source { font-size: .72rem; color: var(--accent); opacity: .7; text-transform: uppercase; letter-spacing: .05em; margin-bottom: .3rem; }
+  .meta { display: flex; align-items: center; gap: .6rem; margin-bottom: .4rem; }
+  .source { font-size: .72rem; color: var(--accent); opacity: .8; text-transform: uppercase; letter-spacing: .05em; }
   .card h3 { font-size: .97rem; margin-bottom: .6rem; font-weight: 600; }
   .card h3 a { color: var(--text); text-decoration: none; }
   .card h3 a:hover { color: var(--accent); }
   .badge {
     display: inline-block; font-size: .7rem; padding: .15rem .5rem;
     background: rgba(52,211,153,.15); color: var(--green);
-    border: 1px solid rgba(52,211,153,.3); border-radius: 4px; margin-bottom: .5rem;
+    border: 1px solid rgba(52,211,153,.3); border-radius: 4px; margin-bottom: .6rem;
   }
-  .ai-summary { font-size: .92rem; color: var(--text); margin-bottom: .8rem; line-height: 1.75; }
-  details { margin-top: .4rem; }
+  .ai-summary { font-size: .93rem; line-height: 1.8; margin-bottom: .8rem; }
   details summary {
-    font-size: .78rem; color: var(--muted); cursor: pointer;
-    list-style: none; display: flex; align-items: center; gap: .3rem;
+    font-size: .78rem; color: var(--muted); cursor: pointer; list-style: none;
+    display: flex; align-items: center; gap: .3rem;
   }
   details summary::before { content: "▶"; font-size: .65rem; transition: transform .2s; }
   details[open] summary::before { transform: rotate(90deg); }
@@ -57,55 +51,300 @@
 <body>
 <header>
   <h1>📰 Daily News</h1>
-  <p>2026年03月29日 — Gemini AI が初学者向けに解説</p>
+  <p>2026年03月28日のニュース — Gemini AIが関西弁で解説</p>
+  <p class="count">全 24 件</p>
 </header>
 <main>
-<section class="category"><h2>テクノロジー・IT</h2>
-  <article class="card">
-    <div class="source">ITmedia AI＋ 最新記事一覧</div>
-    <h3><a href="https://www.itmedia.co.jp/enterprise/articles/2603/28/news017.html" target="_blank" rel="noopener">Notion、日本と韓国でデータ保管可能に　26年5月から提供開始</a></h3>
-    <div class="badge">🤖 AI解説</div>
-    <p class="ai-summary">Notion Labsは、新たに日本と韓国をデータ保管地域に指定すると発表した。AWSを活用し国内保存を選択可能にすることで、企業の内部統制や法規制への対応を支援する。</p>
-    <details>
-      <summary>元の記事概要を見る</summary>
-      <p class="original">Notion Labsは、新たに日本と韓国をデータ保管地域に指定すると発表した。AWSを活用し国内保存を選択可能にすることで、企業の内部統制や法規制への対応を支援する。</p>
-    </details>
-  </article>
-  <article class="card">
-    <div class="source">ITmedia AI＋ 最新記事一覧</div>
-    <h3><a href="https://www.itmedia.co.jp/enterprise/articles/2603/28/news016.html" target="_blank" rel="noopener">ドラクエで「対話型AIバディ」誕生　ゲーム業界の機能不全をどう突破するか</a></h3>
-    <div class="badge">🤖 AI解説</div>
-    <p class="ai-summary">市場拡大の裏で収益悪化に喘ぐゲーム業界。この構造的課題を打破すべく、スクウェア・エニックスとGoogle Cloudが手を組んだ。両社が見すえる、人気作『ドラクエ』を舞台に、生成AIが「敵」から「友」へと変容する未来とは。</p>
-    <details>
-      <summary>元の記事概要を見る</summary>
-      <p class="original">市場拡大の裏で収益悪化に喘ぐゲーム業界。この構造的課題を打破すべく、スクウェア・エニックスとGoogle Cloudが手を組んだ。両社が見すえる、人気作『ドラクエ』を舞台に、生成AIが「敵」から「友」へと変容する未来とは。</p>
-    </details>
-  </article>
-  <article class="card">
-    <div class="source">ITmedia AI＋ 最新記事一覧</div>
-    <h3><a href="https://www.itmedia.co.jp/aiplus/articles/2603/27/news115.html" target="_blank" rel="noopener">“AI不使用”の作品に「AI生成」と誤表記――電子書籍配信「クロスフォリオ出版」が謝罪</a></h3>
-    <div class="badge">🤖 AI解説</div>
-    <p class="ai-summary">BookLiveは、クリエイター向け電子書籍配信サービス「クロスフォリオ出版」で配信した一部の作品で、制作に生成AIを利用していないにもかかわらず、AIを使用している旨の誤表記があったと謝罪した。</p>
-    <details>
-      <summary>元の記事概要を見る</summary>
-      <p class="original">BookLiveは、クリエイター向け電子書籍配信サービス「クロスフォリオ出版」で配信した一部の作品で、制作に生成AIを利用していないにもかかわらず、AIを使用している旨の誤表記があったと謝罪した。</p>
-    </details>
-  </article>
-  <article class="card">
-    <div class="source">ITmedia AI＋ 最新記事一覧</div>
-    <h3><a href="https://www.itmedia.co.jp/news/articles/2603/27/news112.html" target="_blank" rel="noopener">サイバー子会社・AI Shift、名前が似た企業との混同に注意喚起　「SHIFT」や「SHIFT AI」との誤認が発生か</a></h3>
-    <div class="badge">🤖 AI解説</div>
-    <p class="ai-summary">サイバーエージェントの子会社でAI事業を手掛けるAI Shiftが、自社への問い合わせや評価において、似た名前の企業・サービスとの混同が見られるとして注意喚起した。生成AI関連のスクール事業を手掛けるSHIFT AI（東京都渋谷区）や、ITコンサルティング事業を手掛けるSHIFTとの誤認が起きているとみられる。</p>
-    <details>
-      <summary>元の記事概要を見る</summary>
-      <p class="original">サイバーエージェントの子会社でAI事業を手掛けるAI Shiftが、自社への問い合わせや評価において、似た名前の企業・サービスとの混同が見られるとして注意喚起した。生成AI関連のスクール事業を手掛けるSHIFT AI（東京都渋谷区）や、ITコンサルティング事業を手掛けるSHIFTとの誤認が起きているとみられる。</p>
-    </details>
-  </article>
-</section>
-<section class="category"><h2>ビジネス・経済</h2>
-</section>
+<article class="card">
+  <div class="meta">
+    <span class="source">ig.com</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQNzBxNG9nSWdVWlFmRERnYWJxT18zZkU2bWpRVGhMOXU1RENjMHlkREtCRHg2NzdkMDZhSUlaWWEtbkxBSHVpNjU2eFQ2T0JocG4yRWpkc2x4Y3NHWWtxd0ZscTYxUWR0YmUzcTRtS0lUS1E2WEJPV0xjTzVuNTRaeG15XzFfeUtTMWo4c2lEeTNQdjhuREtUa1pibjRVY0JlTEE1WFpTM1dIMW5DU2tzWUl0SjU?oc=5" target="_blank" rel="noopener">米国株、週明けも急落か S&P500転落継続 イラン戦争に拡大リスク - ig.com</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">LOGISTICS TODAY</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBXdWZDeTVjNnRRUnE4bGZZdFpYREFnRDhBQUZuR21ibHlxS19fV0t4LXJKaUJXd1ViMkRyUWpweEpYYk1wamRDaw?oc=5" target="_blank" rel="noopener">日本が原油先物介入を検討、円安対策で異例の手段 - LOGISTICS TODAY</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">bloomberg.com</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBqV0cwMnNUemVkY3lHeFVoZGl2cTVJcjhzQXJLRHhOWjhFOUx6NnlIeGpEcmxEYy0yd0xGY2x4YTdySEJFb3ljX0wtNERMOU1UaXJ6SnhNTERrbnFwQjJSYmkwU2lXLUJfdWlFNHhQSGk0b2VUNFVn?oc=5" target="_blank" rel="noopener">ドル売り・円買いを、イラン戦争激化なら－ドル・スマイル理論提唱者 - bloomberg.com</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">crypto-times.jp</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5MTk5oejFZZUJzb0ZpdENzNnlieE9Takc4NWYwaFdWQzhMektDVUgxNllKVVh4U2IwOFE3OUlpdExhTDQ3eFdLazZCcWo2M21WWVNoZzZiVVNvUVlaWEdzXzZfTUdyNEdvN2Y4RHJKd2o2UE9QV1pNV0Nn?oc=5" target="_blank" rel="noopener">【今日の仮想通貨ニュース】BTC6万枚を大手が爆買い。BTCのインフレ勝率は97%？ - crypto-times.jp</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">日本経済新聞</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBqeXdXblF4SDNGS19qTG9xLXZ0VHNTQ04xYW41RW9HMFhjZ1Y5THdkaFlHS1gyMGF5YkU5bEJ4T0RGdVVDbEgwcHdnVUhrR25EVDRGTkFGTkZPbTRJY0tVcEt3SEFGTHpUOWoxbDJvZXFadVo0Ujk2V2RVZXBGUQ?oc=5" target="_blank" rel="noopener">2030年に勝つ侍、成長へフルスイング 日経平均10万円への道① - 日本経済新聞</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">crypto-times.jp</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE90U0c4T1hjWlRqOUVfMExqUWRZdW4xbWF0VHZiLWJVSXpLeFV2U081T0liakV1ZUlDVENVOUIyOUZUXzltTTZsdmYzV3A5ekUzMjRZdmg3aU5Da3B4U1d6S21pWGVNR1pXV19yeHM1TEtoM29TNEFndWhPaVI?oc=5" target="_blank" rel="noopener">なぜビットコイン保有者は激怒？米サックス氏退任と未達の公約 - crypto-times.jp</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5jODFCMGo3dnZDemRVTFU5QmhWT2UtVmRucFJvMnVNUFZlWEJfWDhYYl9tWExoTnozV2NudWFyT2RHb3pPSmZlZ1lzYkVLMVlZbDRDWnM4VlA3RHJNV090eFFuMWRHa2tNMHNDMk5NUQ?oc=5" target="_blank" rel="noopener">主要証券会社、金価格が3,700ドルまで下落する可能性を指摘 執筆 - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">Yahoo!ファイナンス</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNaVh5RktvSWNGdC15N3MyaTlhWHNoVzFub2JzNl9RVlJaYzlXLTdCbkhqMVotallxb3ZrNEhuemQzUmI2V2V3bFVac0lucnNHOHNfRENCSWNVamwxalNXQ205ck5sbE9mc3pJZk1OYXhuSlpuZC1MVlBsX012VWd6NXh5N21oTlk?oc=5" target="_blank" rel="noopener">34歳女性「含み益も出ているし、大好きなマリメッコ商品がもらえる」配当金もうれしい株主優待(あるじゃん（All About マネー）) - Yahoo!ファイナンス</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">jp.reuters.com</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRmF2NlBnN0hPZkdhMzlpMVhsVXlJZE9HbzJUdUFhYkdwdDhEcWtlekIzR2dyZUVmZ2xVZURDVFo5a1FtSVpnaG9JYlBBSGRBNFpsNVRVcHVXLUVpUl8xRFFmNFlfYW1TMFZnSmVBWnFTclFNRXJpelowazFuVEZGS0VmeGpGOE1ySWFv?oc=5" target="_blank" rel="noopener">中国の大手国有銀3行、25年の利益ほぼ横ばい 不動産市場の低迷続く - jp.reuters.com</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">みんかぶ</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE9Penhnd3p1cjlhRTIzYVF3bVByeEo1ZmZOLXpfVjBLS0RNcVRyYjNHdHdTaVZlRVRmU2pqaEhZSEtqTEZEY1E?oc=5" target="_blank" rel="noopener">国内株式市場見通し：中東情勢の不透明感拭い切れず、長期資金は様子見ムードが続く見通し - みんかぶ</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">manegy.com</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZclNCUi1qSDF4UXBRNTVyRnl2MGJjbWhJblBxQTlXeUNWQTZyUlBBZnF1akpIOGhjUXFsVDQ4NTBscVEzSzFRSGNDN2FoQy1Lbmxj?oc=5" target="_blank" rel="noopener">フリーレントの会計処理と税務処理上の注意点 第2回（最終回） フリーレントの税務処理上の注意点 - manegy.com</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">テレ東BIZ</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RdmMyWldYUkVYZWEwZDhxQjdZTXpMejlIV1ZHVEJyOTF2cGN2TUZmUGE2VzB0bWVpV1JDd0d2QlFvUzFEanRjNnZJTU5VaC13dGFQbWxxLVFCRzVqdGcyeQ?oc=5" target="_blank" rel="noopener">若者目線で考える「投資はなぜ必要か」｜日経モーニングプラスFT（モープラFT） - テレ東BIZ</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">jp.reuters.com</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVBqRjNBRlE2Rkx4dnUwS3JXYVRLTkJGanhMTmpWQU1KR1pNb19iNTI5ZWFYcHFlNnYwa1BSdi1XQm1LMXFCaXNZaEFQWFZ5RV95Y1ExTERSR0hPRC1md1dZb0pfVjlHTXJQQnlGLXVWSWFpWWJvcFAwaS1Ud0pNdQ?oc=5" target="_blank" rel="noopener">シカゴ日経平均先物（27日） - jp.reuters.com</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">かぶたん</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE05UkkyZXZ3MWF3Q2JXLXprLVRFZ3p5ajhnN2NFUUZZOXhNUHE0QThxV3NkZmpmc2Jrbzd0QlF6LWdsNGdDYnQtSnI5aW9vZVhJY0E?oc=5" target="_blank" rel="noopener">米国市場データ ＮＹダウは793ドル安と2日続落 （3月27日） - かぶたん</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">Yahoo!ファイナンス</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOdFM4RzdiWWU5TGhpbnRpQWtvNHhPd0taWlJOenl6RUJkdUNZRVZpNlJ0MEppT1JYVktiRi12a1FyempRN0pUUVhsQmdLbXdTUXJEemNKNE9WSElVSHMzQjZ3UkwzTkxleHg2YXRzNm9YQTZNLXU3SE5TN0FmMnNNbGhuVG80WnM?oc=5" target="_blank" rel="noopener">読者の「老後資金」目標額を発表！年200万円配当でも安心できない？【月刊マネー誌ダイヤモンド・ザイ】 - Yahoo!ファイナンス</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">四季報オンライン</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1JTGVKNkJ4V3haYXEwQW5pUm1pXy1Va2ZIMWxrMnN6U3BSdkZudkdaNTBzZnJhWGh4Ync3WExUczZsOUZLc1l6Unl3T0t0VTZlS1VjalJBbw?oc=5" target="_blank" rel="noopener">成長株選びが報われない？それでも｢四季報｣を読む理由 - 四季報オンライン</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">All About（オールアバウト）</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTFB2ZE5RWWtJT0tkS2ZwZ2twT0xyNTVKLWRLTjgtUWNMVG1GOVhual9wSHNTaWpnVU9PRGhoLVR3MEYwelpHTkFLa3BMWE4?oc=5" target="_blank" rel="noopener">老後の医療費、本当に負担が増えるのは何歳から？どうやって備えればいいの？ [定年・退職のお金] All About - All About（オールアバウト）</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">gentosha-go.com</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5oUm96ODc4M1RDMkJzMU1wX3B0czgxblVOTDVYY3g1Qk5hT0hLMUhxenpEd3JaRDEtQmNBb0wyNXk4dzd1SDJUM3k0cnF3azJNVVE?oc=5" target="_blank" rel="noopener">2024年税制改正で“贈与の常識”が激変。夫婦で220万円の「ハイブリッド贈与」も、相続直前の「駆け込み贈与」も可能に…最新「相続時精算課税制度」活用術【公認会計士が解説】 - gentosha-go.com</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">ライブドアニュース</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9DYjQ5cHhiUTVYXzJPM1BaQ2ZHemFIWWR0WVJYT0xxRjg0QUlaelE4Z1VlNDZFV2xvMmNmcVlEUWw0NUtLQ3JTV0tPSkxCSkpWTFd6SU5SUnc2bHlSb3JR?oc=5" target="_blank" rel="noopener">クレカマニアが超有能クレカ「三井住友カードゴールド（NL）」を私がメインカードにしない3つの理由を解説 - ライブドアニュース</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">Yahoo!ニュース</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE40cW9lSXdfYUlYakdreGdaei1fb0s0d3I0S3Uwem1mRWYyTUlOcldJcUJCcnRKa0cxVklBSHFaMHBBcEFTS1JWNTA3cU9ydS1RWlhpR2tfdTlYeEdlb2Z0SlU0SUdOVVBKQ0VfUDhGdVk4N2I2MzZRblJheThLems?oc=5" target="_blank" rel="noopener">西日本シティ銀行、新卒者初任給を２０２７年から一律１万５０００円引き上げ…大学卒の総合職は２８万５０００円 - Yahoo!ニュース</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">CoinPost</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9UTWZuNGV1ZEZyVjRKMGI5dWlDdFBMLW5fSWI5NzdMd1ZFX2ZpbXNZN093dVNZR2d3U2FzUHpiOGVZNDg?oc=5" target="_blank" rel="noopener">ビットメインに安保懸念か、トランプ利益相反をウォーレン議員が追及 - CoinPost</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">Forbes JAPAN</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBuV2hxXzhCdDdKM3oxdVJnTTVhX0tyZHRMZ0x6a3dkMFZRdV9CZ2VhUGJvOWxTcWk4cE9USGpLQUhJSmFyZS1iQ1hCSnNVUVJfTUdXYkNXVEI?oc=5" target="_blank" rel="noopener">化ける「お宝銘柄」の発掘術 上場3900社を20社に凝縮 - Forbes JAPAN</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">外為どっとコム</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9EbDROb1FnRHdTbnJvMnQ0RmhCTEkzNUU5TXphT0NOLUhBb1c2TWRtSUJVNGZuNFFrdG9zM2xzbXJqTEtYRFo0eGd0ckt5aVpaZGV0YmQyMEdOZGREd2lqWVc0UQ?oc=5" target="_blank" rel="noopener">中東リスクと通貨トレンド見通し #外為どっとコム - 外為どっとコム マネ育チャンネル - 外為どっとコム</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
+<article class="card">
+  <div class="meta">
+    <span class="source">Yahoo!ニュース</span>
+  </div>
+  <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE40dnZpOXlmOGxkUEtVbkNSMEtiWm9IVzFsQ0tVOWY0bHBDbWZPUlZfeUFUVFdKYzk1RXhCSmpSUXlxUTE3ZVVhVk5nbWMzSEpKd2wzSWFoa294Q1M1UHhMTUNlWldJM0YtTWJCTXN0anpsWXpSellCRW9CYnd0THM?oc=5" target="_blank" rel="noopener">“CAおすすめ” 効果バツグン？ 黒毛和牛に脚光、ふるさと納税 爆伸び11倍――JALアワードで「テイクオフ大賞」に輝く 西之表市 - Yahoo!ニュース</a></h3>
+  <div class="badge">🤖 関西弁AI解説</div>
+  <p class="ai-summary">（要約に失敗しました）</p>
+  <details>
+    <summary>元の記事を見る</summary>
+    <p class="original">…</p>
+  </details>
+</article>
 
 </main>
-<footer>Updated automatically via GitHub Actions &nbsp;·&nbsp; 2026-03-29 07:31 JST</footer>
+<footer>Updated via GitHub Actions &nbsp;·&nbsp; 2026-03-29 19:56 JST</footer>
 </body>
 </html>
