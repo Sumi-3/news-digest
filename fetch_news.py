@@ -97,37 +97,6 @@ def fetch_articles() -> list[dict]:
     return articles
 
 
-def summarize_with_ollama(title: str, body: str) -> str:
-    content = body if body else title
-
-    prompt = f"""以下のニュース記事を、関西弁で初心者向けに解説してください。
-
-条件：
-- 関西弁（やわらかい口語）で書く
-- 専門用語が出てきたら「〇〇（←△△のこと）」のように注釈をカッコ内に入れる
-- IT・ビジネスの知識ゼロの人でも分かるように
-- 「なんでこれが大事なん？」という視点を一言入れる
-- 4〜5文でまとめる
-
-タイトル: {title}
-記事内容: {content}"""
-
-    try:
-        resp = requests.post(
-            "http://localhost:11434/api/chat",  # Ollamaのローカルサーバー
-            json={
-                "model": "gemma4",
-                "messages": [{"role": "user", "content": prompt}],
-                "stream": False,  # Falseにすると全文まとめて返ってくる
-            },
-            timeout=120,  # ローカルLLMはAPIより遅いので長めに設定
-        )
-        return resp.json()["message"]["content"].strip()
-    except Exception as e:
-        print(f"  [WARN] Ollama エラー: {e}")
-        return body[:200] if body else "（要約に失敗しました）"
-
-
 # ─── Gemini API で関西弁・初心者向け要約 ─────────────────────────────────────
 def summarize_with_gemini(title: str, body: str) -> str:
     api_key = os.environ.get("GEMINI_API_KEY", "")
@@ -179,7 +148,7 @@ def generate_html(articles: list[dict]) -> None:
 
     cards_html = ""
     for a in articles:
-        ai_text = a.get("ollama_summary", "").replace("<", "&lt;").replace(">", "&gt;")
+        ai_text = a.get("gemini_summary", "").replace("<", "&lt;").replace(">", "&gt;")
         original = a.get("body", "")[:200].replace("<", "&lt;").replace(">", "&gt;")
         cards_html += f"""<article class="card">
   <div class="meta">
@@ -247,7 +216,7 @@ def generate_html(articles: list[dict]) -> None:
 <body>
 <header>
   <h1>📰 Daily News</h1>
-  <p>{yesterday}のニュース — ollama AIが関西弁で解説</p>
+  <p>{yesterday}のニュース — Gemini AIが関西弁で解説</p>
   <p class="count">全 {len(articles)} 件</p>
 </header>
 <main>
@@ -311,7 +280,7 @@ if __name__ == "__main__":
     print(f"\n=== Step 2: Gemini で関西弁要約（{len(articles)} 件） ===")
     for i, a in enumerate(articles):
         print(f"  [{i+1}/{len(articles)}] {a['title'][:40]}...")
-        a["ollama_summary"] = summarize_with_ollama(a["title"], a["body"])
+        a["gemini_summary"] = summarize_with_gemini(a["title"], a["body"])
         time.sleep(1)  # API レート制限対策
 
     print("\n=== Step 3: HTML 生成 ===")
